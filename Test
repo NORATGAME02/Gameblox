@@ -1,0 +1,68 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+local Window = MakeWindow({
+    Hub = {
+        Title = "Tổng Hợp GAG"
+    },
+    Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"1234"},
+        Notifi = {
+            Notifications = true,
+            CorrectKey = "Running the Script...",
+            Incorrectkey = "The key is incorrect",
+            CopyKeyLink = "Copied to Clipboard"
+        }
+    }
+})
+
+MinimizeButton({
+    Image = "https://i.postimg.cc/4yKy6DsH/t-i-xu-ng-5.jpg",
+    Size = {60, 60},
+    Color = Color3.fromRGB(10, 10, 10),
+    Corner = true,
+    Stroke = false,
+    StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+-- Tab Grow A Garden
+local Tab1o = MakeTab({Name = "Script Grow a garden"})
+
+local function AddGAGScript(name, url)
+    AddButton(Tab1o, {
+        Name = name,
+        Callback = function()
+            loadstring(game:HttpGet(url))()
+        end
+    })
+end
+
+-- Danh sách Script Grow A Garden đầy đủ:
+AddGAGScript("No Lag GAG", "https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/Loader/LoaderV2.lua")
+AddGAGScript("Alchemy GAG", "https://scripts.alchemyhub.xyz")
+AddGAGScript("Grow A Garden V0.71", "https://lunor.dev/loader")
+AddGAGScript("H4xScr GAG", "https://raw.githubusercontent.com/H4xScripts/Loader/refs/heads/main/loader2.lua")
+AddGAGScript("OP Script GAG", "https://raw.githubusercontent.com/nf-36/Koronis/refs/heads/main/Scripts/Loader.lua")
+AddGAGScript("Lunacy GAG", "https://api.luarmor.net/files/v3/loaders/1c1979f776d3e81869cf5f49f91900a7.lua")
+AddGAGScript("Tbao GAG", "https://raw.githubusercontent.com/tbao143/game/refs/heads/main/TbaoHubGrowGarden")
+AddGAGScript("Vexeze GAG", "https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubMain")
+AddGAGScript("Dinga GAG", "https://raw.githubusercontent.com/Dingarik/Dingarik/refs/heads/main/GrowAGarden")
+AddGAGScript("Grow A Garden 2 (Maus)", "https://raw.githubusercontent.com/nootmaus/GrowAAGarden/refs/heads/main/mauscripts")
+AddGAGScript("Grow A Garden 1 (Gumanba)", "https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/GrowaGarden")
+AddGAGScript("BlueX Hub GAG", "https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua")
+AddGAGScript("Speed X GAG", "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua")
+AddGAGScript("Kenniel GAG", "https://raw.githubusercontent.com/Kenniel123/Grow-a-garden/refs/heads/main/Grow%20A%20Garden")
+AddGAGScript("Thunder GAG", "https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/GaG/Main.lua")
+AddGAGScript("Stock GAG", "https://pastebin.com/raw/90r2yXNi")
+AddGAGScript("Money GAG", "https://raw.githubusercontent.com/Bern0va/Scripts/refs/heads/main/gag-dupe.lua")
+AddGAGScript("Blue GAG", "https://raw.githubusercontent.com/tesghg/Grow-a-Garden/main/ameicaa_Grow_A_Garden.lua")
+AddGAGScript("Nicuse GAG", "https://nicuse.xyz/MainHub.lua")
+AddGAGScript("Galactic GAG", "https://raw.githubusercontent.com/GalacticScripts/Galactic-Hub/refs/heads/main/Galactic%20Hub")
+
+-- Không thêm script Native GAG vì yêu cầu key
+-- script_key="PASTE_KEY_HERE"; loadstring(game:HttpGet("https://getnative.cc/script/loader"))()
+
+-- Kết thúc danh sách
